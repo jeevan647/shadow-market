@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SHADOW MARKET | Gaming Store</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #07070c;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(circle at 15% 15%, #5420a322, transparent 35%),
+      radial-gradient(circle at 85% 60%, #a020ff18, transparent 35%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+header {
+    padding: 23px 18px;
+    text-align: center;
+    background: rgba(15, 13, 24, .85);
+    border-bottom: 1px solid #7738a8;
+    box-shadow: 0 5px 30px #801dff22;
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #e9d5ff;
+    text-shadow: 0 0 18px #a855f7;
+}
+
+.tagline {
+    font-size: 10px;
+    letter-spacing: 4px;
+    color: #a78bfa;
+    margin-top: 8px;
+}
+
+.hero {
+    padding: 65px 18px 45px;
+    text-align: center;
+}
+
+.small-label {
+    display: inline-block;
+    color: #d8b4fe;
+    border: 1px solid #8b5cf6;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #fff, #c084fc, #818cf8);
+    -webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+
+.hero p {
+    color: #a1a1aa;
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 350px;
+    margin: auto auto 25px;
+}
+
+.search {
+    width: 90%;
+    max-width: 390px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #5b3280;
+    outline: none;
+    background: #171421;
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 0 20px #9333ea18;
+}
+
+.search:focus {
+    border-color: #c084fc;
+    box-shadow: 0 0 18px #9333ea55;
+}
+
+.section {
+    padding: 15px 20px;
+}
+
+.section-heading {
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #e9d5ff;
+    margin-bottom: 22px;
+}
+
+.game-card {
+    max-width: 390px;
+    margin: auto;
+    padding: 18px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #21182e, #101019);
+    border: 1px solid #7540a0;
+    box-shadow: 0 0 30px #9333ea25;
+}
+
+.game-image {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    border-radius: 14px;
+    background: radial-gradient(circle, #54217c, #100b18);
+    margin-bottom: 20px;
+}
+
+.game-tag {
+    color: #c084fc;
+    font-size: 10px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.game-card h2 {
+    font-size: 27px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #aaa4b5;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 11px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 12px;
+    transition: .2s;
+}
+
+.play {
+    background: linear-gradient(90deg, #9333ea, #6d28d9);
+    color: white;
+    box-shadow: 0 0 22px #9333ea55;
+}
+
+.download {
+    background: #171421;
+    color: #d8b4fe;
+    border: 1px solid #7540a0;
+}
+
+.btn:active {
+    transform: scale(.97);
+}
+
+.info {
+    text-align: center;
+    color: #777184;
+    font-size: 11px;
+    margin-top: 22px;
+    letter-spacing: 1px;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    margin-top: 55px;
+    background: #100d17;
+    border-top: 1px solid #472765;
+}
+
+footer h3 {
+    color: #d8b4fe;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #777184;
+    font-size: 11px;
+    line-height: 1.8;
+}
+
+.hidden {
+    display: none;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SHADOW MARKET</div>
+    <div class="tagline">THE FUTURE OF GAMING</div>
+</header>
+
+<section class="hero">
+
+    <div class="small-label">
+        PREMIUM GAMING STORE
+    </div>
+
+    <h1>ENTER THE<br>SHADOW WORLD</h1>
+
+    <p>
+        Discover exclusive games.
+        Experience the darkness.
+        Play beyond limits.
+    </p>
+
+    <input
+        class="search"
+        id="search"
+        type="text"
+        placeholder="⌕  Search games..."
+        oninput="searchGames()"
+    >
+
+</section>
+
+<section class="section">
+
+    <h2 class="section-heading">
+        ✦ FEATURED GAME
+    </h2>
+
+    <div class="game-card" id="shadowGame">
+
+        <img
+            class="game-image"
+            src="shadow-crush.png"
+            alt="Shadow Crush"
+            onerror="this.style.display='none'"
+        >
+
+        <div class="game-tag">
+            EXCLUSIVE • ANDROID
+        </div>
+
+        <h2>SHADOW CRUSH</h2>
+
+        <p class="description">
+            Enter a world of puzzles and challenges.
+            Test your mind and experience the Shadow.
+        </p>
+
+        <a
+            href="ac24://open4094337-6ows98"
+            class="btn play"
+        >
+            ▶ PLAY NOW
+        </a>
+
+        <a
+            href="games/shadow-crush.apk"
+            download="Shadow-Crush.apk"
+            class="btn download"
+        >
+            ↓ DOWNLOAD APK
+        </a>
+
+        <div class="info">
+            SHADOW CRUSH • VERSION 9.8
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    <h3>SHADOW MARKET</h3>
+    <p>
+        YOUR WORLD. YOUR GAMES. YOUR SHADOW.<br>
+        © 2026 SHADOW MARKET
+    </p>
+</footer>
+
+<script>
+function searchGames() {
+
+    let value = document
+        .getElementById("search")
+        .value.toLowerCase()
+        .trim();
+
+    let game = document.getElementById("shadowGame");
+
+    if ("shadow crush".includes(value)) {
+        game.classList.remove("hidden");
+    } else {
+        game.classList.add("hidden");
+    }
+}
+</script>
+
+</body>
+</html>
